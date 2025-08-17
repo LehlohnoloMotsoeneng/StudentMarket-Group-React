@@ -11,6 +11,7 @@ import Sell from "./pages/Sell";
 import Pending from "./pages/Pending";
 import Buy from "./pages/Buy";
 import Transaction from "./pages/Transaction";
+
 import Profile from "./pages/Profile";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
@@ -30,7 +31,9 @@ const App = () => (
         <Route path="/sell" element={<Sell />} />
         <Route path="/pending" element={<Pending />} />
         <Route path="/buy" element={<Buy />} />
-        <Route path="/transaction/:productId" element={<Transaction />} />
+        <Route path="/transaction" element={<Transaction />} />
+<Route path="/transaction/:productId" element={<Transaction />} />
+
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="*" element={<NotFound />} />
